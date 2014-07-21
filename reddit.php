@@ -269,20 +269,6 @@ class reddit{
         }
         return $response;
     }
-
-     public function pm($subject, $text, $to){
-        $response = null;
-        if ($subject && $text && $to){
-            $urlComment = "{$this->apiHost}/compose";
-            $postData = sprintf("subject=%s&text=%s&to=%s&uh=%s",
-                                $subject,
-                                $text,
-                                $to,
-                                $this->modHash);
-            $response = $this->runCurl($urlComment, $postData);
-        }
-        return $response;
-    }
     
     /**
     * Vote on a story
@@ -392,6 +378,8 @@ class reddit{
         
         $response = json_decode(curl_exec($ch));
         curl_close($ch);
+        
+        var_dump($response);
         
         return $response;
     }
