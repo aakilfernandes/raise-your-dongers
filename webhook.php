@@ -1,15 +1,17 @@
 <?PHP
 
+$webhookKey = 'xxxxxxxx'; // key from http://getredditalerts.com
+$redditUsername = 'xxxxxxxx'; //username of your bot
+$redditPassword = 'xxxxxxxx'; //password of your bot
+
+
+//you shouldn't need to edit anything below this line, unless you want to customize the response
+
 ini_set('display_errors',1);
 ini_set('display_startup_errors',1);
 error_reporting(-1);
 echo "<pre>";
 
-$webhookKey = 'xxxxxxxx'; // key from http://getredditalerts.com
-$redditUsername = 'xxxxxxxx'; //username of your bot
-$redditPassword = 'xxxxxxxx'; //password of your bot
-
-//you shouldn't need to edit anything below this line, unless you want to customize the response
 if(!isset($_POST['redditAlertJson'])){ 
 	die('Missing redditAlertJson');
 }
