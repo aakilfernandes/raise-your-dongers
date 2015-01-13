@@ -1,5 +1,8 @@
 <?PHP
 
+//THIS PHP FILE IS BROKEN! I'll update soon. Sorry for the inconvenience.
+//-Aakil
+
 $webhookKey = 'xxxxxxxx'; // key from http://getredditalerts.com
 $redditUsername = 'xxxxxxxx'; //username of your bot
 $redditPassword = 'xxxxxxxx'; //password of your bot
